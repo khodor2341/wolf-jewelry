@@ -1099,6 +1099,9 @@ background-image: url('images/wolfk.png');
   .container { padding: 0 20px; }
   .header__inner { padding: 0 20px; }
 
+  /* Shorter hero on mobile to reduce zoom/cropping */
+  .hero { min-height: 65vh; }
+
   /* Show hamburger menu, hide desktop nav links */
   .nav-toggle { display: flex; }
   .nav--left, .nav--right { display: none; }
