@@ -1094,4 +1094,49 @@ background-image: url('images/wolfk.png');
   font-size: 13px;
 }
 
+/* ===== MOBILE RESPONSIVE FIXES ===== */
+@media (max-width: 768px) {
+  .container { padding: 0 20px; }
+  .header__inner { padding: 0 20px; }
+
+  /* Show hamburger menu, hide desktop nav links */
+  .nav-toggle { display: flex; }
+  .nav--left, .nav--right { display: none; }
+
+  /* Stack grids into fewer columns */
+  .collections__grid { grid-template-columns: 1fr; }
+  .collection-card--large { grid-column: 1; grid-row: auto; }
+
+  .products__grid { grid-template-columns: repeat(2, 1fr); gap: 20px 16px; }
+  .materials__grid { grid-template-columns: repeat(2, 1fr); gap: 28px; }
+  .insta-grid { grid-template-columns: repeat(3, 1fr); }
+  .care__grid { grid-template-columns: repeat(2, 1fr); gap: 28px; }
+  .footer__top { grid-template-columns: 1fr; gap: 36px; }
+
+  /* Stack side-by-side sections vertically */
+  .craft-banner__inner { flex-direction: column; gap: 40px; text-align: center; }
+  .about__inner { flex-direction: column; gap: 40px; }
+
+  .craft-banner__visual { width: 220px; height: 220px; }
+  .craft-visual__ring { width: 170px; height: 170px; }
+  .craft-visual__ring--2 { width: 220px; height: 220px; }
+
+  .about__visual { width: 240px; height: 240px; }
+  .about__shape--1 { width: 200px; height: 200px; }
+  .about__shape--2 { width: 150px; height: 150px; }
+
+  /* Make social icons fit better */
+  .social-icon { width: 46px; height: 46px; }
+}
+
+@media (max-width: 480px) {
+  .products__grid { grid-template-columns: 1fr; }
+  .materials__grid { grid-template-columns: 1fr; }
+  .care__grid { grid-template-columns: 1fr; }
+  .insta-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .social-icon { width: 44px; height: 44px; }
+}
+
+
 
