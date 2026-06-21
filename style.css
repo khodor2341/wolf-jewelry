@@ -373,7 +373,7 @@ a { color: inherit; text-decoration: none; }
   position: absolute;
   inset: 0;
 
-background-image: url('images/wolfk.png');
+background-image: url('images/wolfk1.png');
   background-size: cover;
   background-position: left center;
 
@@ -396,7 +396,7 @@ background-image: url('images/wolfk.png');
   position: absolute;
   inset: 0;
 
-background-image: url('images/wolfk.png');
+background-image: url('images/wolfk1.png');
   background-size: cover;
   background-position: right center;
   filter: brightness(100%);
